@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //input chosen year
+   int year;
+
+   cout<<"Enter year to check if it is a leap year: ";
+   cin>>year;
+
+    //control structure for checking if the year is a leap year
+   if(year%4 == 0)
+   {
+       cout<<year<<" is a leap year";
+   }
+   else
+   {
+       cout<<year<<" is not a leap year";
+   }
+
+
+   return 0;
+}
