@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    //Using string data type to be able to enter letters
+    string name;
+
+    //Using integer data type for age and birthdate
+    int age,bday,bmonth,byear;
+
+    //Using constant integer for the current year and month
+    const int cyear=2025,cmonth=4;
+
+    //Asking the user to input name
+    cout <<"Enter Name: ";
+    cin>>name;
+
+    //Asking the user to input birthdate
+    cout<<"Enter Birthdate(YYYY/MM/DD): ";
+    cin>>byear>>bmonth>>bday;
+
+    //Using a subtraction formula and logical operator NOT to identify an accurate age of the user
+    // Logical operator NOT reverses boolean result, if the statements are true it returns 0, while if a statement is false it returns 1
+    age = cyear - byear - (!(cmonth == bmonth)&&(cmonth < bmonth));
+
+    //Displaying the name and the age of the user
+    cout<<"Name: "<<name;
+    cout<<"\nAge: "<<age;
+
+    return 0;
+}
